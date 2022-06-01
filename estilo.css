@@ -1,0 +1,793 @@
+	@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;1,200&family=Tapestry&family=Truculenta:opsz,wght@12..72,100;12..72,200;12..72,300&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Source+Sans+Pro:ital,wght@0,200;0,300;1,200&family=Tapestry&family=Truculenta:opsz,wght@12..72,100;12..72,200;12..72,300&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+          
+
+
+/* Este local de empanadas no existe, toda la informacion puesta en el sitio web es inexistente*/
+
+
+
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+*::-webkit-scrollbar{
+	width: 10px;
+}
+
+*::-webkit-scrollbar-thumb{
+	width: 10px;
+	background: #402C25;
+	border-radius: 5px;
+}
+
+.responsive{
+	display: flex;
+	justify-content: center;
+}
+
+
+.layout{
+	display: grid;
+	height: 145vh;
+	grid-template-rows: 5vh 50vh 80vh 10vh;
+	grid-template-columns:  1fr;
+	width: 100%;
+	justify-self: center;
+	
+
+}
+/*HEADER*/
+
+.header__container{
+	background-image: url(https://images2.alphacoders.com/816/81670.jpg);
+
+}
+
+.nav__container{
+	width: 100%;
+	height: 100%;
+}
+.ul__container{
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.ul__container li{
+	list-style: none;
+}
+
+.header__links{
+	text-decoration: none;
+	font-family: 'Yatra One', cursive;
+
+	
+}
+
+.header__links:hover{
+	color: #fff8;
+
+}
+
+/*HEADER*/
+
+/*MAIN*/
+
+.section__first{
+	background-image: url(https://elgourmet.s3.amazonaws.com/recetas/share/share_fpa6sn8vqc_empanadas.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+/*Section first bounce animation*/
+
+
+
+.section__first-logo{
+	
+	animation: bounce 2s cubic-bezier(0.280, 0.840, 0.420, 1) 1;
+	transition-timing-function: ease-in-out	;
+	padding: 50px;
+	background-image: url(https://images2.alphacoders.com/816/81670.jpg);
+	position: absolute;
+}
+
+
+ @keyframes bounce {
+        0%   { transform: scale(1,1)      translateY(0); }
+        10%  { transform: scale(1.1,.9)   translateY(0); }
+        30%  { transform: scale(.9,1.1)   translateY(-100px); }
+        50%  { transform: scale(1.05,.95) translateY(0); }
+        57%  { transform: scale(1,1)      translateY(-7px); }
+        64%  { transform: scale(1,1)      translateY(0); }
+        100% { transform: scale(1,1)      translateY(0); }
+    
+}
+
+/* La verdad es que me la afane esta animacion no la hice yo :P*/
+
+
+
+
+/*Section first bounce animation*/
+
+
+
+.section__first-logo h1{
+	font-family: 'Yatra One', cursive;
+
+}
+
+
+.section__second{
+	display: grid;
+	grid-template-rows: 10vh 67vh;
+	grid-template-columns: 1fr;
+	background: #D9D9D9 ;
+
+}
+
+.section__second-menu{
+	background-image: url(https://images2.alphacoders.com/816/81670.jpg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Yatra One', cursive;
+}
+
+.section__second-empanadas{
+	background: #D9D9D9;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr ;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-gap: 10px;
+	margin: 10px;
+
+
+	
+
+}
+
+
+.jyq,.carne,.verdura,.humita,.pollo,.roquefort{
+	height:100%;
+	background:#402C25 ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.jyq div,.carne div,.verdura div,.humita div,.pollo div,.roquefort div{
+	height: 90%;
+	width: 90%;
+	background-position: center center;
+	background-size: cover;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	font-weight: 100px;
+	color: black;
+	font-family: 'Koulen', cursive;
+	transition: color,font-size 1s;
+
+
+}
+
+
+
+
+.jyq div{
+	background-image: url(https://www.frizata.com/files/products/622b8f225a2fb-27-4.jpg);
+}
+
+
+/*FONDOS*/
+.carne div{	
+	background-image: url(https://cuk-it.com/wp-content/uploads/2020/05/thumb02-1-1024x576-2-1.jpg);	
+}
+.verdura div{
+	background-image: url(https://cloudfront-us-east-1.images.arcpublishing.com/radiomitre/CQHXJUPRCREPJE423XRK54HUDE.jpg);
+}
+
+.humita div{
+	background-image: url(https://www.frizata.com/files/products/622b65b7b2457-35-4.jpg);
+}
+
+.pollo div{
+	background-image: url(https://www.comohacerpanqueques.info/wp-content/uploads/2018/06/receta-de-empanadas-de-pollo-1024x683.jpg);
+}
+
+.roquefort div{
+	background-image: url(https://d22fxaf9t8d39k.cloudfront.net/33d6e0828d04a1ceafb33d5a3bd41db887c172ddb392b88527348c987d3470fa83288.png);
+}
+/*FONDOS*/
+
+
+/*Animaciones Empanadas*/
+
+
+.roquefort div:hover{
+	color:red ;
+	font-size: 30px;
+	cursor: pointer;
+}
+.pollo div:hover{
+	color:red ;
+	font-size: 30px;
+	cursor: pointer;
+}
+.humita div:hover{
+	color:red ;
+	font-size: 30px;
+	cursor: pointer;
+}
+.carne div:hover{
+	color:red ;
+	font-size: 30px;
+	cursor: pointer;
+}
+.verdura div:hover{
+	color:red ;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.jyq div:hover{
+	color:red ;
+	font-size: 30px;
+	cursor: pointer;
+
+}
+
+/*Animaciones Empanadas*/
+
+
+
+
+
+
+
+
+/*Footer*/
+
+.footer__container{
+	width: 100%;
+	background-image:url(https://images2.alphacoders.com/816/81670.jpg);
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.footer__container-items{
+	display: flex;
+	height: 50%;
+	align-items: center;
+
+}
+
+
+
+
+
+.footer__container-items p{
+	font-size: 20px;
+	font-family: 'Yatra One', cursive;
+
+}
+
+.instagram,.whatsapp{
+	margin-left: 10px;
+	font-size: 20px;
+}
+
+.instagram:hover{
+	color:#B804FF ;
+	cursor: pointer;
+}
+.instagram__texto:hover{
+	color:#B804FF ;
+	cursor: pointer;
+}
+
+.whatsapp:hover{
+	color:#38FF01 ;
+	cursor: pointer;
+}
+.whatsapp__texto:hover{
+	color:#38FF01 ;
+	cursor: pointer;
+}
+
+/*No use links por que la empresa no existe, por lo tanto, no tienen contactos xd*/
+
+
+/*Footer*/
+
+
+
+/*RESPONSIVE*/
+@media only screen and (min-width: 1000px){
+
+	body{
+		background-image: url(imagenes/background.jpg);
+		background-size: cover;
+
+	}
+
+
+	.responsive{
+		display: flex;
+		justify-content: center;
+	}
+
+
+	.layout{
+		display: grid;
+		height: 145vh;
+		grid-template-rows: 5vh 50vh 80vh 10vh;
+		grid-template-columns:  1fr;
+		width: 50%;
+		box-shadow: 0px -1px 14px 7px rgba(0,0,0,0.57);
+		-webkit-box-shadow: 0px -1px 14px 7px rgba(0,0,0,0.57);
+		-moz-box-shadow: 0px -1px 14px 7px rgba(0,0,0,0.57);
+
+
+
+
+	}
+/*HEADER*/
+
+.header__container{
+	background-image: url(https://images2.alphacoders.com/816/81670.jpg);
+}
+
+.nav__container{
+	width: 100%;
+	height: 100%;
+}
+.ul__container{
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.ul__container li{
+	list-style: none;
+}
+
+.header__links{
+	text-decoration: none;
+
+	
+}
+
+
+
+/*HEADER*/
+
+/*MAIN*/
+
+.section__first{
+	background-image: url(https://elgourmet.s3.amazonaws.com/recetas/share/share_fpa6sn8vqc_empanadas.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.section__first-logo{
+	padding: 50px;
+	background-image: url(https://images2.alphacoders.com/816/81670.jpg);
+
+
+}
+
+
+.section__second{
+	display: grid;
+	grid-template-rows: 10vh 63vh;
+	grid-template-columns: 1fr;
+	background: #D9D9D9 ;
+
+}
+
+.section__second-menu{
+	background-image: url(https://images2.alphacoders.com/816/81670.jpg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.section__second-empanadas{
+	background: #D9D9D9;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr ;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-gap: 10px;
+	margin: 10px;
+	margin-top: 30px;
+	
+
+
+
+	
+
+}
+
+.jyq,.carne,.verdura,.humita,.pollo,.roquefort{
+	height:100%;
+	background:#402C25 ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.jyq div,.carne div,.verdura div,.humita div,.pollo div,.roquefort div{
+	height: 90%;
+	width: 95%;
+	background-position: center center;
+	background-size: cover;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	font-weight: 100px;
+	color: black;
+	font-family: 'Koulen', cursive;
+
+}
+
+
+
+.jyq div{
+	background-image: url(https://www.frizata.com/files/products/622b8f225a2fb-27-4.jpg);	
+}
+.carne div{
+	background-image: url(https://cuk-it.com/wp-content/uploads/2020/05/thumb02-1-1024x576-2-1.jpg);
+}
+.verdura div{
+	background-image: url(https://cloudfront-us-east-1.images.arcpublishing.com/radiomitre/CQHXJUPRCREPJE423XRK54HUDE.jpg);
+}
+
+.humita div{
+	background-image: url(https://www.frizata.com/files/products/622b65b7b2457-35-4.jpg);
+}
+
+.pollo div{
+
+	background-image: url(https://www.comohacerpanqueques.info/wp-content/uploads/2018/06/receta-de-empanadas-de-pollo-1024x683.jpg);
+}
+
+
+.roquefort div{
+	background-image: url(https://d22fxaf9t8d39k.cloudfront.net/33d6e0828d04a1ceafb33d5a3bd41db887c172ddb392b88527348c987d3470fa83288.png);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Footer*/
+
+.footer__container{
+	background-image:url(https://images2.alphacoders.com/816/81670.jpg);
+}
+
+/*Footer*/
+
+.section__second-contacto{
+	display: grid;
+	grid-template-rows: 10vh 70vh;
+	grid-template-columns: 1fr;
+	background: #D9D9D9 ;
+
+}
+
+.section__second-wood{
+	background-image: url(https://images2.alphacoders.com/816/81670.jpg);
+
+}
+
+.section__second-form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	background: url(https://images2.alphacoders.com/816/81670.jpg);
+}
+
+.input__container{
+	height: 70%;
+	width: 70%;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: Center;
+	justify-content: center;
+	background: :#402C25;
+	
+}
+
+.input__container input{
+	width: 90%;
+	margin-bottom: 10px;
+
+}
+
+textarea{
+	height: 50%;
+	width: 90%;
+}
+
+
+
+}
+
+
+
+/*CONTACTO*/
+
+
+.section__second-contacto{
+	display: grid;
+	grid-template-rows: 10vh 70vh;
+	grid-template-columns: 1fr;
+	background: #D9D9D9 ;
+
+}
+
+.section__second-wood{
+	background-image: url(https://images2.alphacoders.com/816/81670.jpg);
+
+}
+
+.section__second-form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 50px;
+	background: url(https://images2.alphacoders.com/816/81670.jpg);
+}
+
+.input__container{
+
+	display: flex;
+	flex-wrap: wrap;
+	text-align: Center;
+	justify-content: center;
+	background: :#402C25;
+	
+}
+
+.input__container input{
+	width: 90%;
+	margin-bottom: 10px;
+	color: black;
+
+}
+
+textarea{
+	height: 50%;
+	width: 90%;
+	color: black;
+}
+
+.submit{
+	color: black;
+}
+
+
+
+
+
+/*HORARIOS*/
+
+
+
+.section__second-horarios{
+	display: grid;
+	grid-template-rows: 10vh 70vh;
+	grid-template-columns: 1fr;
+	background: #D9D9D9 ;
+
+}
+
+
+
+.section__second__horarios-container{
+	margin-top: 20px;
+	height: 100%;
+	display: grid;
+	grid-template-rows: repeat(7, 8vh);
+	grid-template-columns: 1fr;
+	grid-gap: 10px;
+}
+
+.dia__container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	border: solid black: 2px;
+	background: white;
+	border: solid black 2px;
+
+}
+
+.dia,.horario{
+	flex-basis: 100%;
+	text-align: center;
+	color: black;
+	font-family: 'Koulen', cursive;
+}
+
+
+
+
+/*UBICACION*/
+
+.section__second-ubicacion{
+	display: grid;
+	grid-template-rows: 10vh 70vh;
+	grid-template-columns: 1fr;
+	background: #D9D9D9 ;
+
+}
+
+
+.section__second__ubicacion-container{
+	display: flex;
+	flex-wrap: nowrap;
+
+
+	
+
+}
+
+.ubicacion__container{
+	height: 100%;
+	display: flex;
+	jusityfy-content: Center;
+	align-items: center;
+	flex-wrap: wrap;
+
+}
+
+
+
+.img__container{
+	
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+
+	
+	
+}
+
+.img__container img{
+
+	width:100%;
+	height:100%;
+
+}
+
+.img__container p {
+	
+}
+
+/*Aca separe por calles para poder acomodarlos de manera independiente con absolute y que no se movieran en conjunto*/
+
+.jujuy {
+	color: black;
+	font-size: 3rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-family: 'Yatra One', cursive;
+	display: none;
+	
+	
+
+}
+
+.alvarado{
+	color: black;
+	font-size: 3rem;
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%,-50%);	
+	font-family: 'Yatra One', cursive;
+	display: none;
+
+
+}
+
+.moreno{
+	color: black;
+	font-size: 3rem;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%,-50%);	
+	font-family: 'Yatra One', cursive;
+	display: none;
+
+
+
+
+}
+
+
+/*Con esto, al mantener el mouse sobre el mapa se ven las direcciones*/
+
+.img__container:hover .moreno{
+	display: inline-block;
+}
+.img__container:hover .jujuy{
+	display: inline-block;
+}
+
+.img__container:hover .alvarado{
+	display: inline-block;
+}
+
+
+
+.direcciones__container{
+	display: grid;
+	height: 100%;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-column: Auto;
+	margin: 10px;
+	grid-gap: 10px;
+
+}
+.direcciones{
+
+	
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	border: solid black 2px;
+
+	
+}
+.direcciones p {
+	padding-top: 3vh;
+}
+
+
+
+
+/*RESPONSIVE*/
